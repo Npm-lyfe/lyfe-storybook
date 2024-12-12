@@ -1,0 +1,7 @@
+.warning {
+    color: yellow;
+    padding: 16px;
+    background-color: rgb(178 99 22);
+}
+.error {  color: red;   padding: 16px; background-color: rgb(227, 203, 201);}
+.success {  color: green; padding: 16px;  background-color: rgb(114, 250, 164);}

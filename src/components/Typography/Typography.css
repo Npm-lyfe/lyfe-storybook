@@ -1,0 +1,146 @@
+p  {
+    padding: 0;
+    margin:0;
+}
+.h1 {
+    font-size: 2.250rem;
+    font-weight: 400;
+}
+.h2 {
+    font-size: 2.000rem;
+    font-weight: 400;
+}
+.h3 {
+    font-size: 1.812rem;
+}
+.h4 {
+    font-size: 1.625rem;
+}
+.h4_semibold {
+    font-size: 1.625rem;
+    font-weight: 600;
+}
+
+.xx_large_regular {
+    font-size: 1.438rem;
+    font-weight: 400;
+}
+.xx_large_semibold {
+    font-size: 1.438rem;
+    font-weight: 600;
+}
+.x_large_regular {
+    font-size: 1.250rem;
+    font-weight: 400;
+}
+.x_large_semibold {
+    font-size: 1.250rem;
+    font-weight: 600;
+}
+.large_regular {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.large_semibold {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+.large_semibold_uppercase{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.36px;
+}
+.large_bold {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+.body_regular {
+    font-size: 1rem;
+}
+.body_light {
+    font-size: 1rem;
+    font-weight: 275;
+}
+.body_semibold {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.body_semibold_uppercase {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.32px;
+}
+.body_bold {
+    font-size: 1rem;
+    font-weight: 700;
+}
+.small_regular {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+.small_light {
+    font-size: 0.875rem;
+    font-weight: 275;
+}
+.small_semibold {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+.small_semibold_uppercase {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.28px;
+}
+.x_small_regular {
+    font-size: 0.812rem;
+    font-weight: 400;
+}
+.x_small_semibold_uppercase {
+    font-size: 0.812rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.26px;
+}
+.xx_small_regular {
+    font-size: 0.688rem;
+    font-weight: 400;
+    letter-spacing: 0.11px;
+}
+.xx_small_regular_uppercase {
+    font-size: 0.688rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.44px;
+}
+.xx_small_semibold_uppercase {
+    font-size: 0.688rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.44px;
+}
+.xxx_small_regular {
+    font-size: 0.625rem;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+.xxx_small_bold_uppercase {
+    font-size: 0.625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.uppercase {
+    text-transform: uppercase
+}
+.lowercase {
+    text-transform: lowercase
+}
+.capitalize {
+    text-transform: capitalize
+}
+
+
