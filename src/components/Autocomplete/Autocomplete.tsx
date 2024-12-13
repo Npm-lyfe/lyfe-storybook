@@ -129,7 +129,7 @@ export const Complete = <
       value={selectedOptions as any}
       renderTags={(value: readonly TOption[], getTagProps) => {
         console.log("value", value);
-        return value.map((option: TOption, index: number) => {
+        return value.map((_option: TOption, index: number) => {
           const { key, ...tagProps } = getTagProps({ index });
           return (
             <Chip variant="outlined" label={"option"} key={key} {...tagProps} />

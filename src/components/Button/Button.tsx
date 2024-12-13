@@ -1,8 +1,9 @@
 import { CircularProgress } from "@mui/material";
-import React from "react";
-import { palette } from "../../theme";
+import { palette } from "../../palette";
 import TouchRipple from "@mui/material/ButtonBase/TouchRipple";
 import "./Button.css";
+import "../../styles.css";
+import React from "react";
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "contained" | "outlined" | "text";
@@ -65,10 +66,16 @@ export const Button: React.FC<ButtonProps> = ({
     return propStyle;
   };
 
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.currentTarget.blur();
+    props.onClick?.(event);
+  };
+
   return (
     <>
       <button
         {...props}
+        onClick={handleClick}
         style={styles()}
         onMouseDown={onRippleStart}
         onMouseUp={onRippleStop}

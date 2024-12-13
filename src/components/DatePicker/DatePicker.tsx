@@ -1,9 +1,9 @@
-// import React from "react";
+import React from "react";
 import { InputLabel, InputLabelProps, styled } from "@mui/material";
 import { DatePicker, DatePickerProps } from "@mui/x-date-pickers/DatePicker";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import { palette } from "../../theme";
+import { palette } from "../../palette";
 import updateLocale from "dayjs/plugin/updateLocale";
 
 import dayjs, { Dayjs } from "dayjs";

@@ -5,3 +5,21 @@
 }
 .error {  color: red;   padding: 16px; background-color: rgb(227, 203, 201);}
 .success {  color: green; padding: 16px;  background-color: rgb(114, 250, 164);}
+
+body {
+  font-family: 'Satoshi', sans-serif;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./fonts/Satoshi/Satoshi-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('./fonts/Satoshi/Satoshi-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+  }

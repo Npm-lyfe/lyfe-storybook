@@ -6,7 +6,7 @@ import {
   TextField,
   TextFieldProps,
 } from "@mui/material";
-import { palette } from "../../theme";
+import { palette } from "../../palette";
 
 const StyledTextField: React.FC<TextFieldProps> = styled(
   TextField
@@ -40,7 +40,7 @@ const StyledTextField: React.FC<TextFieldProps> = styled(
 
   "& .MuiOutlinedInput-root": {
     // TODO: only for autotcomplete its moving icon in datepicker
-    // padding: 0,
+    padding: 0,
     "&:hover fieldset": {
       border: `2px solid ${palette.colors.primary.main}`,
     },
@@ -76,17 +76,16 @@ export interface ICustomTextField {
 export const CustomTextField: React.FC<TextFieldProps & ICustomTextField> = (
   props
 ) => (
-  <>
+  <div>
     {props.label && (
       <StyledLabel style={{ margin: 0 }} shrink htmlFor={props.id}>
         {props.label}
       </StyledLabel>
     )}
-
     <StyledTextField
       {...props}
       label=""
       helperText={props.errorMessage ? props.errorMessage : props.helperText}
     />
-  </>
+  </div>
 );

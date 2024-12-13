@@ -12,7 +12,7 @@ import {
   GridValidRowModel,
   useGridApiRef,
 } from "@mui/x-data-grid";
-import { palette } from "../../theme";
+import { palette } from "../../palette";
 
 const autosizeOptions = {
   includeHeaders: false,
