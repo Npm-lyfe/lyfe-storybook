@@ -39,8 +39,7 @@ const StyledTextField: React.FC<TextFieldProps> = styled(
   },
 
   "& .MuiOutlinedInput-root": {
-    // TODO: only for autotcomplete its moving icon in datepicker
-    padding: 0,
+    fontFamily: "Satoshi, sans-serif",
     "&:hover fieldset": {
       border: `2px solid ${palette.colors.primary.main}`,
     },
@@ -53,6 +52,9 @@ const StyledTextField: React.FC<TextFieldProps> = styled(
     },
     "&.Mui-error .MuiOutlinedInput-notchedOutline": {
       borderColor: palette.colors.error[40],
+    },
+    "& .MuiAutocomplete-input": {
+      padding: 0,
     },
   },
   "& .MuiOutlinedInput-notchedOutline": {

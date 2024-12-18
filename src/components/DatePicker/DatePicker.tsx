@@ -2,17 +2,10 @@ import React from "react";
 import { InputLabel, InputLabelProps, styled } from "@mui/material";
 import { DatePicker, DatePickerProps } from "@mui/x-date-pickers/DatePicker";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider/LocalizationProvider";
-import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { palette } from "../../palette";
-import updateLocale from "dayjs/plugin/updateLocale";
-
-import dayjs, { Dayjs } from "dayjs";
 import { CustomTextField } from "../TextField";
-
-dayjs.extend(updateLocale);
-dayjs.updateLocale("en", {
-  weekStart: 1,
-});
+import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFnsV3";
+import { enGB } from "date-fns/locale";
 
 const StyledLabel: React.FC<InputLabelProps> = styled(
   InputLabel
@@ -22,19 +15,14 @@ const StyledLabel: React.FC<InputLabelProps> = styled(
   fontWeight: 700,
 });
 
-export interface UIDatePickerProps<TDate extends Dayjs>
-  extends DatePickerProps<TDate> {
+export interface UIDatePickerProps extends DatePickerProps<Date> {
   label?: string;
   id?: string;
 }
 
-export const UIDatePicker = <TDate extends Dayjs>({
-  label,
-  id,
-  ...props
-}: UIDatePickerProps<TDate>) => {
+export const UIDatePicker = ({ label, id, ...props }: UIDatePickerProps) => {
   return (
-    <LocalizationProvider dateAdapter={AdapterDayjs}>
+    <LocalizationProvider dateAdapter={AdapterDateFns} adapterLocale={enGB}>
       {label && (
         <StyledLabel style={{ margin: 0 }} shrink htmlFor={id}>
           {label}

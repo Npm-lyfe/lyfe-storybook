@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 import { CustomTextField } from "../components/TextField";
 
 export default {
-  title: "Library/CustomTextField",
+  title: "Library/Inputs/CustomTextField",
   component: CustomTextField,
   parameters: {
     layout: "centered",

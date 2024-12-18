@@ -1,10 +1,9 @@
 import React from "react";
 import { Complete } from "../components/Autocomplete";
 import { Box } from "@mui/material";
-import { AutocompleteMui } from "../components/Autocomplete/AutoCompleteMui";
 
 export default {
-  title: "Library/Complete",
+  title: "Library/Inputs/Complete",
   component: Complete,
   parameters: {
     layout: "centered",
@@ -47,7 +46,6 @@ export const Primary = () => {
         freeSolo
         multiple
       />
-      {/* <AutocompleteMui /> */}
     </Box>
   );
 };

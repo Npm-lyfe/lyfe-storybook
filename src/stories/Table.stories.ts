@@ -2,7 +2,7 @@ import { fn } from "@storybook/test";
 import { LyfeTable } from "../components/Table";
 
 export default {
-  title: "Library/LyfeTable",
+  title: "Library/Tables/LyfeTable",
   component: LyfeTable,
   tags: ["autodocs"],
   parameters: {
