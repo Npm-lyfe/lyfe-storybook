@@ -2,6 +2,7 @@ import React from "react";
 import { useMemo } from "react";
 import "./Typography.css";
 import { palette } from "../../palette";
+import "../../styles.css";
 
 type IVariant =
   | "h1"

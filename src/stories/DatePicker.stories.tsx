@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 import { UIDatePicker } from "../components/DatePicker";
 
 export default {
-  title: "Library/DatePicker",
+  title: "Library/Inputs/DatePicker",
   component: UIDatePicker,
   parameters: {
     layout: "centered",
